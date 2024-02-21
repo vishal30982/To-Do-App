@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    text-align: center;
+    background-color: black;
+    overflow: hidden;
+}
+h1 {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 500;
+    color: yellow;
+}
+#input {
+    padding: 10px 5px;
+    border: 2px solid rgba(255, 255, 0, 0.705);
+    border-radius: 10px;
+}
+#input:focus {
+    border: 2.5px solid yellow;
+    border-radius: 10px;
+    outline: none;
+}
+#create {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#addBtn {
+    width: 50px;
+    height: 39px;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: yellow;
+    border: 2px solid rgb(59, 58, 58);
+    border-radius: 50px;
+}
+#tasks {
+    height: 525px;
+    overflow: auto;
+}
+#tasks::-webkit-scrollbar {
+    width:  12px;
+}
+#tasks::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 0, 0.733);
+    border: 1px solid grey;
+    border-radius: 50px;
+}
+#tasks::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 50px;
+}
+#tasksList {
+    list-style: none;
+}
+.task {
+    margin-bottom: 10px;
+    display: inline-block;
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+.cross {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: yellow;
+    border: 2px solid rgb(59, 58, 58);
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: medium;
+}
+.checked {
+    text-decoration: line-through;
+}
